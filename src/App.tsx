@@ -24,8 +24,8 @@ function App() {
            })
           return [...prevState]
           });
-      setTask(prevState => {
-          return [prevState, doneTask]
+      setDoneTasks(prevState => {
+          return [...prevState, doneTask]
       })
     }
 
@@ -41,7 +41,7 @@ function App() {
                 <TodoList doneTask={doneTask} tasks={tasks} />
             </div>
             <div className="w-50">
-                <Done/>
+                <Done tasks={doneTasks}/>
             </div>
         </div>
     </>

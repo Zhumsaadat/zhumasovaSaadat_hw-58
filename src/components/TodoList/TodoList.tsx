@@ -11,8 +11,8 @@ const TodoList: React.FC<Props> = ({tasks, doneTask}) => {
     return (
         <>
             <h2> list</h2>
-            {tasks.map(task => (
-                <TasksComponent doneTask={doneTask} tasks={tasks} task={task}/>
+            {tasks.map((task, index) => (
+                <TasksComponent key={index} doneTask={doneTask} tasks={tasks} task={task}/>
             ))}
          </>
     )
