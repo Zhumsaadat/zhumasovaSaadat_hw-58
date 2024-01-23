@@ -13,7 +13,7 @@ function App() {
 
   const [doneTasks, setDoneTasks] = useState([]);
 
-  const doneTask = (id:number) => {
+  const doneTask = (id:number ) => {
       let doneTask;
       setTask(prevState => {
           prevState.forEach((task, i) => {

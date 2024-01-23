@@ -1,7 +1,7 @@
 import React from 'react';
 import DoneTaskItem from './DoneTaskItem';
 import { Tasks } from '../../../type';
-import TasksComponent from '../TodoList/TasksComponent';
+
 
 interface Props {
     tasks: Tasks[];
@@ -24,6 +24,7 @@ const Done: React.FC<Props> = ({tasks}) => {
     };
     return (
         <div>
+            <h4 className="pb-2">Выполненные задачи</h4>
             {content()}
         </div>
     );
